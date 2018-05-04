@@ -194,19 +194,26 @@ namespace HKarved
             foreach( DataSetHK.ARVEDRow ar in dsHK.ARVED)
             {
                 decimal hkhind = 0;
-                hkhind = dsHK.HKhinnakiri.First(uu => uu.KOOD == ar.HKKOOD).HIND*ar.KOGUS;
-                if (ar.HIND != hkhind)
+                try
                 {
-                    ar.SetColumnError(6, string.Format("VANA HIND {0}",ar.HIND));
-                    ar.HIND = hkhind;
-                    
+                    hkhind = dsHK.HKhinnakiri.First(uu => uu.KOOD == ar.HKKOOD).HIND * ar.KOGUS * ar.KOEFITSENT1 * ar.KOEFITSENT2 ;
+                    if (ar.HIND != hkhind)
+                    {
+                        ar.SetColumnError(6, string.Format("VANA HIND {0}", ar.HIND));
+                        ar.HIND = hkhind;
+
+                    }
+                }catch
+                {
+                    MessageBox.Show(" Ilmselt ei leitud hinda hinnakirjast koodile: " + ar.HKKOOD.ToString());
                 }
+
 
             }
             foreach(DataSetHK.LEHEDRow lr in dsHK.LEHED)
             {
                 decimal summa = 0;
-                summa = dsHK.ARVED.Where(ar => ar.LEHTID == lr.LEHTID).Select(x => x.KOEFITSENT1 * x.KOEFITSENT2 * x.HIND).Sum();
+                summa = dsHK.ARVED.Where(ar => ar.LEHTID == lr.LEHTID).Select(x => x.HIND).Sum();
                 if(lr.SUMMA != summa)
                 {
                     lr.SetColumnError(2,string.Format( "VANA SUMMA {0} ",lr.SUMMA));
