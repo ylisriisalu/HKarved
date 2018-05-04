@@ -27,7 +27,7 @@ namespace HKarved
                 hkfile = openFileHK.FileName;
                 dsHK.HKhinnakiri.Clear();
                 // MessageBox.Show(hkfile);
-                System.IO.StreamReader myFile = new System.IO.StreamReader(hkfile, Encoding.GetEncoding(1252));
+                System.IO.StreamReader myFile = new System.IO.StreamReader(hkfile, Encoding.UTF8); //Encoding.GetEncoding(1252));
                 string sisu = myFile.ReadToEnd();
                 myFile.Close();
                 string[] lines = sisu.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
@@ -72,7 +72,7 @@ namespace HKarved
                    new System.Globalization.CultureInfo("en-US");
                 dsHK.ARVED.Clear();
                 // MessageBox.Show(hkfile);
-                System.IO.StreamReader myFile = new System.IO.StreamReader(openFile_arved.FileName,true);
+                System.IO.StreamReader myFile = new System.IO.StreamReader(openFile_arved.FileName, Encoding.GetEncoding("windows-1257"));
                 string sisu = myFile.ReadToEnd();
                 myFile.Close();
                 dsHK.ARVED.Clear();
@@ -132,7 +132,7 @@ namespace HKarved
                    new System.Globalization.CultureInfo("en-US");
                 
                 // MessageBox.Show(hkfile);
-                System.IO.StreamReader myFile = new System.IO.StreamReader(openFile_lehed.FileName,Encoding.GetEncoding(1252));
+                System.IO.StreamReader myFile = new System.IO.StreamReader(openFile_lehed.FileName,Encoding.GetEncoding("windows-1257"));
                 string sisu = myFile.ReadToEnd();
                 myFile.Close();
                 dsHK.LEHED.Clear();
@@ -196,14 +196,16 @@ namespace HKarved
                 decimal hkhind = 0;
                 try
                 {
-                    hkhind = dsHK.HKhinnakiri.First(uu => uu.KOOD == ar.HKKOOD).HIND * ar.KOGUS * ar.KOEFITSENT1 * ar.KOEFITSENT2 ;
+                    hkhind = decimal.Round(dsHK.HKhinnakiri.First(uu => uu.KOOD == ar.HKKOOD).HIND * ar.KOGUS * ar.KOEFITSENT1 * ar.KOEFITSENT2 ,2);
                     if (ar.HIND != hkhind)
                     {
                         ar.SetColumnError(6, string.Format("VANA HIND {0}", ar.HIND));
-                        ar.HIND = hkhind;
+                       
 
                     }
-                }catch
+                    ar.HIND = hkhind + 0.01m - 0.01m;
+                }
+                catch
                 {
                     MessageBox.Show(" Ilmselt ei leitud hinda hinnakirjast koodile: " + ar.HKKOOD.ToString());
                 }
@@ -213,12 +215,13 @@ namespace HKarved
             foreach(DataSetHK.LEHEDRow lr in dsHK.LEHED)
             {
                 decimal summa = 0;
-                summa = dsHK.ARVED.Where(ar => ar.LEHTID == lr.LEHTID).Select(x => x.HIND).Sum();
+                summa =decimal.Round( dsHK.ARVED.Where(ar => ar.LEHTID == lr.LEHTID).Select(x => x.HIND).Sum(),2);
                 if(lr.SUMMA != summa)
                 {
                     lr.SetColumnError(2,string.Format( "VANA SUMMA {0} ",lr.SUMMA));
-                    lr.SUMMA = summa;
+                   
                 }
+                lr.SUMMA = summa+ 0.01m - 0.01m; 
             }
         }
 
@@ -238,13 +241,13 @@ namespace HKarved
             try
             {
                 // arved.dat
-                using (StreamWriter sw = File.CreateText(openFile_arved.FileName))
+                using (StreamWriter sw = new StreamWriter(openFile_arved.FileName, false, Encoding.GetEncoding("windows-1257")))
                 {
-                    foreach(DataSetHK.ARVEDRow ar in dsHK.ARVED)
+                    foreach (DataSetHK.ARVEDRow ar in dsHK.ARVED)
                     {
                         //string line = "";
 
-                        sw.WriteLine(string.Join("\t", ar.ItemArray.Select(it => it.ToString())).Replace(',','.'));
+                        sw.WriteLine(string.Join("\t", ar.ItemArray.Select(it => it.ToString())).Replace(',', '.'));
                     }
                 }
             }
@@ -255,7 +258,7 @@ namespace HKarved
             try
             {
                 // lehed.dat
-                using (StreamWriter lw = File.CreateText(openFile_lehed.FileName))
+                using (StreamWriter lw = new StreamWriter(openFile_lehed.FileName,false, Encoding.GetEncoding("windows-1257")))
                 {
                     foreach (DataSetHK.LEHEDRow lr in dsHK.LEHED)
                     {
@@ -274,5 +277,7 @@ namespace HKarved
                 MessageBox.Show(ex.Message);
             }
         }
+
+        
     }
 }

@@ -147,33 +147,6 @@
   <data name="&gt;&gt;btn_avahinnakiri.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <metadata name="NIMI.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="HKhinnakiriBS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>126, 17</value>
-  </metadata>
-  <data name="dataGView_hkhinnakiri.Location" type="System.Drawing.Point, System.Drawing">
-    <value>185, 12</value>
-  </data>
-  <data name="dataGView_hkhinnakiri.Size" type="System.Drawing.Size, System.Drawing">
-    <value>544, 169</value>
-  </data>
-  <data name="dataGView_hkhinnakiri.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;dataGView_hkhinnakiri.Name" xml:space="preserve">
-    <value>dataGView_hkhinnakiri</value>
-  </data>
-  <data name="&gt;&gt;dataGView_hkhinnakiri.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataGView_hkhinnakiri.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;dataGView_hkhinnakiri.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
   <data name="kOODDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>KOOD</value>
   </data>
@@ -198,9 +171,27 @@
   <metadata name="dsHK.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>368, 17</value>
   </metadata>
-  <metadata name="dsHK.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>368, 17</value>
-  </metadata>
+  <data name="dataGView_hkhinnakiri.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 12</value>
+  </data>
+  <data name="dataGView_hkhinnakiri.Size" type="System.Drawing.Size, System.Drawing">
+    <value>544, 169</value>
+  </data>
+  <data name="dataGView_hkhinnakiri.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dataGView_hkhinnakiri.Name" xml:space="preserve">
+    <value>dataGView_hkhinnakiri</value>
+  </data>
+  <data name="&gt;&gt;dataGView_hkhinnakiri.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGView_hkhinnakiri.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dataGView_hkhinnakiri.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
   <metadata name="openFileHK.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>254, 17</value>
   </metadata>
@@ -264,33 +255,6 @@
   <metadata name="openFile_lehed.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>581, 17</value>
   </metadata>
-  <metadata name="ARVEDBS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>714, 17</value>
-  </metadata>
-  <data name="dataGridView1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1046, 160</value>
-  </data>
-  <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;dataGridView1.Name" xml:space="preserve">
-    <value>dataGridView1</value>
-  </data>
-  <data name="&gt;&gt;dataGridView1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataGridView1.Parent" xml:space="preserve">
-    <value>splitContainer_failid.Panel1</value>
-  </data>
-  <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="lEHTIDDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>LEHTID</value>
   </data>
@@ -324,6 +288,42 @@
   <metadata name="ARVEDBS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>714, 17</value>
   </metadata>
+  <data name="dataGridView1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1046, 160</value>
+  </data>
+  <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Name" xml:space="preserve">
+    <value>dataGridView1</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Parent" xml:space="preserve">
+    <value>splitContainer_failid.Panel1</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lEHTIDDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>LEHTID</value>
+  </data>
+  <data name="iNFODataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>INFO</value>
+  </data>
+  <data name="sUMMADataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>SUMMA</value>
+  </data>
+  <data name="iNFO2DataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>INFO2</value>
+  </data>
   <metadata name="LEHEDBS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>812, 19</value>
   </metadata>
@@ -351,21 +351,9 @@
   <data name="&gt;&gt;dataGridView2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="lEHTIDDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
-    <value>LEHTID</value>
+  <data name="btnTootle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="iNFODataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>INFO</value>
-  </data>
-  <data name="sUMMADataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>SUMMA</value>
-  </data>
-  <data name="iNFO2DataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>INFO2</value>
-  </data>
-  <metadata name="LEHEDBS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>812, 19</value>
-  </metadata>
   <data name="btnTootle.Location" type="System.Drawing.Point, System.Drawing">
     <value>777, 12</value>
   </data>
@@ -443,6 +431,9 @@
   </data>
   <data name="&gt;&gt;splitContainer_failid.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="btn_kirjutafailid.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btn_kirjutafailid.Location" type="System.Drawing.Point, System.Drawing">
     <value>767, 174</value>
@@ -627,6 +618,12 @@
   <data name="&gt;&gt;ARVEDBS.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;LEHEDBS.Name" xml:space="preserve">
+    <value>LEHEDBS</value>
+  </data>
+  <data name="&gt;&gt;LEHEDBS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;lEHTIDDataGridViewTextBoxColumn1.Name" xml:space="preserve">
     <value>lEHTIDDataGridViewTextBoxColumn1</value>
   </data>
@@ -650,12 +647,6 @@
   </data>
   <data name="&gt;&gt;iNFO2DataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LEHEDBS.Name" xml:space="preserve">
-    <value>LEHEDBS</value>
-  </data>
-  <data name="&gt;&gt;LEHEDBS.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form_main</value>

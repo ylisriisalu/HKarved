@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_main));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_avahinnakiri = new System.Windows.Forms.Button();
             this.dataGView_hkhinnakiri = new System.Windows.Forms.DataGridView();
             this.kOODDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,15 +58,15 @@
             this.kOEFITSENT2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ARVEDBS = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.lEHTIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iNFODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sUMMADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iNFO2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LEHEDBS = new System.Windows.Forms.BindingSource(this.components);
             this.btnTootle = new System.Windows.Forms.Button();
             this.splitContainer_failid = new System.Windows.Forms.SplitContainer();
             this.btn_kirjutafailid = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lEHTIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iNFODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sUMMADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iNFO2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGView_hkhinnakiri)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HKhinnakiriBS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsHK)).BeginInit();
@@ -226,9 +226,9 @@
             // hINDDataGridViewTextBoxColumn1
             // 
             this.hINDDataGridViewTextBoxColumn1.DataPropertyName = "HIND";
-            dataGridViewCellStyle3.Format = "N2";
-            dataGridViewCellStyle3.NullValue = null;
-            this.hINDDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Format = "N2";
+            dataGridViewCellStyle1.NullValue = null;
+            this.hINDDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle1;
             resources.ApplyResources(this.hINDDataGridViewTextBoxColumn1, "hINDDataGridViewTextBoxColumn1");
             this.hINDDataGridViewTextBoxColumn1.Name = "hINDDataGridViewTextBoxColumn1";
             // 
@@ -267,30 +267,6 @@
             this.dataGridView2.DataSource = this.LEHEDBS;
             resources.ApplyResources(this.dataGridView2, "dataGridView2");
             this.dataGridView2.Name = "dataGridView2";
-            // 
-            // lEHTIDDataGridViewTextBoxColumn1
-            // 
-            this.lEHTIDDataGridViewTextBoxColumn1.DataPropertyName = "LEHTID";
-            resources.ApplyResources(this.lEHTIDDataGridViewTextBoxColumn1, "lEHTIDDataGridViewTextBoxColumn1");
-            this.lEHTIDDataGridViewTextBoxColumn1.Name = "lEHTIDDataGridViewTextBoxColumn1";
-            // 
-            // iNFODataGridViewTextBoxColumn
-            // 
-            this.iNFODataGridViewTextBoxColumn.DataPropertyName = "INFO";
-            resources.ApplyResources(this.iNFODataGridViewTextBoxColumn, "iNFODataGridViewTextBoxColumn");
-            this.iNFODataGridViewTextBoxColumn.Name = "iNFODataGridViewTextBoxColumn";
-            // 
-            // sUMMADataGridViewTextBoxColumn
-            // 
-            this.sUMMADataGridViewTextBoxColumn.DataPropertyName = "SUMMA";
-            resources.ApplyResources(this.sUMMADataGridViewTextBoxColumn, "sUMMADataGridViewTextBoxColumn");
-            this.sUMMADataGridViewTextBoxColumn.Name = "sUMMADataGridViewTextBoxColumn";
-            // 
-            // iNFO2DataGridViewTextBoxColumn
-            // 
-            this.iNFO2DataGridViewTextBoxColumn.DataPropertyName = "INFO2";
-            resources.ApplyResources(this.iNFO2DataGridViewTextBoxColumn, "iNFO2DataGridViewTextBoxColumn");
-            this.iNFO2DataGridViewTextBoxColumn.Name = "iNFO2DataGridViewTextBoxColumn";
             // 
             // LEHEDBS
             // 
@@ -331,6 +307,31 @@
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // lEHTIDDataGridViewTextBoxColumn1
+            // 
+            this.lEHTIDDataGridViewTextBoxColumn1.DataPropertyName = "LEHTID";
+            resources.ApplyResources(this.lEHTIDDataGridViewTextBoxColumn1, "lEHTIDDataGridViewTextBoxColumn1");
+            this.lEHTIDDataGridViewTextBoxColumn1.Name = "lEHTIDDataGridViewTextBoxColumn1";
+            // 
+            // iNFODataGridViewTextBoxColumn
+            // 
+            this.iNFODataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.iNFODataGridViewTextBoxColumn.DataPropertyName = "INFO";
+            resources.ApplyResources(this.iNFODataGridViewTextBoxColumn, "iNFODataGridViewTextBoxColumn");
+            this.iNFODataGridViewTextBoxColumn.Name = "iNFODataGridViewTextBoxColumn";
+            // 
+            // sUMMADataGridViewTextBoxColumn
+            // 
+            this.sUMMADataGridViewTextBoxColumn.DataPropertyName = "SUMMA";
+            resources.ApplyResources(this.sUMMADataGridViewTextBoxColumn, "sUMMADataGridViewTextBoxColumn");
+            this.sUMMADataGridViewTextBoxColumn.Name = "sUMMADataGridViewTextBoxColumn";
+            // 
+            // iNFO2DataGridViewTextBoxColumn
+            // 
+            this.iNFO2DataGridViewTextBoxColumn.DataPropertyName = "INFO2";
+            resources.ApplyResources(this.iNFO2DataGridViewTextBoxColumn, "iNFO2DataGridViewTextBoxColumn");
+            this.iNFO2DataGridViewTextBoxColumn.Name = "iNFO2DataGridViewTextBoxColumn";
             // 
             // Form_main
             // 
@@ -389,15 +390,15 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tYHIDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn kOEFITSENT2DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lEHTIDDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iNFODataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sUMMADataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iNFO2DataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource LEHEDBS;
         private System.Windows.Forms.Button btnTootle;
         private System.Windows.Forms.SplitContainer splitContainer_failid;
         private System.Windows.Forms.Button btn_kirjutafailid;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lEHTIDDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iNFODataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sUMMADataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iNFO2DataGridViewTextBoxColumn;
     }
 }
 
